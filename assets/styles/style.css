@@ -16,14 +16,22 @@
     height: 80px;
     background-color: brown;
     color: white;
+    text-align: center;
+    padding-top: 30px;
 }
 
 .features {
     height: 80px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+input[type=button] {
+    width: 120px;
 }
 
-. list {
+.list {
     height: auto;
     width: 100%;
 }
