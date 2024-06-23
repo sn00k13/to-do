@@ -50,5 +50,6 @@ input[type=button]:hover {
     display: flex;
     gap: 15px;
     padding: 10px;
+    padding-left: 25px;
     background-color: whitesmoke;
 }
