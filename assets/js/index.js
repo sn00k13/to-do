@@ -16,6 +16,7 @@ add.addEventListener("click", () => {
 });
 
 addList.addEventListener("click", () => {
+    if (checkInput.checked == true)
     showList.style.display = "flex";
     checkInput.style.display = "block"
     checkInput.setAttribute("type", "checkbox");
