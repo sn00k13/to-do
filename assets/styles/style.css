@@ -38,6 +38,15 @@ input[type=button] {
     color: white;
 }
 
+/* input[type=button]:active {
+    width: 120px;
+    background-color: #1067BA;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px grey;
+    color: white;
+} */
+
 input[type=button]:hover {
     cursor: pointer;
     background-color: white;

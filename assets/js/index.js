@@ -16,13 +16,12 @@ add.addEventListener("click", () => {
 });
 
 addList.addEventListener("click", () => {
-    if (checkInput.checked == true)
-    showList.style.display = "flex";
-    checkInput.style.display = "block"
-    checkInput.setAttribute("type", "checkbox");
-    textInput.appendChild(node);
-    showList.appendChild(checkInput);
-    showList.appendChild(textInput);
+        showList.style.display = "flex";
+        checkInput.style.display = "block"
+        checkInput.setAttribute("type", "checkbox");
+        textInput.appendChild(node);
+        showList.appendChild(checkInput);
+        showList.appendChild(textInput);
 });
 
 delList.addEventListener("click", () => {
@@ -32,8 +31,10 @@ delList.addEventListener("click", () => {
     } else {
         alert("No items are checked")
     }
+    location.reload();
 });
 
 editList.addEventListener("click", () => {
     addNew.style.display = "inline-block";
 });
+
