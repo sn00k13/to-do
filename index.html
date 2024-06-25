@@ -10,33 +10,19 @@
     <div class="container">
         <div class="header">TO DO LIST</div>
         <div class="features">
-            <input type="button" value="Add New">
+            <input type="button" value="Add New" id="add-btn">
             <input type="button" value="Delete">
             <input type="button" value="Edit">
         </div>
-        <div class="add-new">
-            <input type="text" name="list-title" id="list-title" placeholder="Enter List Title here">
+        <div class="add-new"id="add-new">
+            <form action="" method="post" id="form-input">
+                <input type="text" name="list-title" id="list-title" placeholder="Enter List Title here">
             <textarea name="list-item" id="list-item" placeholder="Enter new item here and press Add New"></textarea>
-        </div>
-        <div class="list">
-            <input type="checkbox" name="" id="check">
-            <div class="text" id="text">
-                <h3>List Title</h3>
-                <hr>
-                <p id="item1">New Item</p>
-                <p id="item1">New Item2</p>
-                <p id="item1">New Item3</p>
+            <input type="button" value="Add" id="form-button">
+            </form>
             </div>
-        </div>
-        <div class="list">
-            <input type="checkbox" name="" id="check">
-            <div class="text" id="text">
-                <h3>List Title</h3>
-                <hr>
-                <p id="item1">New Item</p>
-                <p id="item1">New Item2</p>
-                <p id="item1">New Item3</p>
-            </div>
+        <div class="list" id="list">
+            
         </div>
     </div>
 

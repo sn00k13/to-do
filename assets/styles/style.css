@@ -51,7 +51,7 @@ input[type=button]:hover {
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    /* display: none; */
+    display: none;
 }
 
 input[type=text] {
@@ -64,11 +64,17 @@ textarea {
     font-size: 0.8rem;
 }
 
+#form-button{
+    height: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 .list {
     border-top: 1px solid grey;
     height: auto;
     width: 100%;
-    display: flex;
+    display: none;
     gap: 15px;
     padding: 10px;
     padding-left: 25px;
@@ -77,18 +83,17 @@ textarea {
 
 @media only screen and (max-width: 768px) {
     .container {
-        border: 2px solid rgb(231, 231, 231);
         width: 90%;
-        margin: auto;
-        /* background-color: rgb(254, 247, 240); */
     }
     input[type=button] {
         width: 90px;
-        background-color: #1067BA;
-        border: none;
-        border-radius: 5px;
-        box-shadow: 1px 1px grey;
-        color: white;
     }
-    
+    input[type=text], textarea {
+        width: 90%;
+        margin: 5px;
+        margin-left: 10px;
+    }
+    .add-new {
+        gap: 30px;
+    }
 }
