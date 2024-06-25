@@ -9,6 +9,8 @@ const checkInput = document.createElement("INPUT");
 const textInput = document.createElement("p");
 const node = document.createTextNode("Item 1")
 
+checkInput.checked = false;
+
 add.addEventListener("click", () => {
     addNew.style.display = "inline-block";
 });
@@ -23,8 +25,12 @@ addList.addEventListener("click", () => {
 });
 
 delList.addEventListener("click", () => {
-    textInput.remove("p");
-    checkInput.style.display = "none"
+    if (checkInput.checked == true) {
+        textInput.remove("p");
+        checkInput.style.display = "none"
+    } else {
+        alert("No items are checked")
+    }
 });
 
 editList.addEventListener("click", () => {
